@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body{
+           /* background-image: linear-gradient(to right top, #70097a, #660679, #5c0477, #510376, #450374, #410279, #3c027e, #360283, #370291, #37029f, #3703ad, #3405bc); */
+           background-image: linear-gradient(to right top, #272020, #331e23, #3c1c2d, #3f1c3c, #3a204f, #302859, #212f61, #003668, #003c62, #003f56, #004149, #18413e);
+        }
+    </style>
+</head>
+<body class="bg-[#23304c] flex items-center justify-center min-h-screen">
+
+    <a href="landing.html"><h1 class="absolute top-6 left-10 text-xl text-white hover:scale-110">QuickCount</h1></a>
+
+    <img src="Images/countdown.png" class=" w-3/12 absolute left-28 top-32"/>
+    <img src="Images/Ellipse.png" class="z-20 animate-ping w-6 absolute left-24 top-56"/>
+    <img src="Images/Ellipse.png" class="z-20 animate-ping w-6 absolute right-96 top-36"/>
+    <img src="Images/Ellipse.png" class="z-20 animate-ping w-6 absolute left-64 bottom-24"/>
+    <img src="Images/Ellipse.png" class="z-20 animate-ping w-6 absolute right-40 top-64"/>
+    <img src="Images/rocket.png" class="absolute  bottom-20 right-20 w-3/12"/>
+
+    <div class="text-center text-container mb-3 pt-9" style="width: 450px; height: 320px; margin-left: calc(5%);">
+        <h1 class="text-4xl font-bold text-[#FFFFF0] mb-3">Countdown Timer</h1>
+        <div id="timer" class="text-6xl font-mono text-white mb-3">
+            00:00:00
+        </div>
+        <div class="flex justify-center space-x-3 mb-9">
+            <input type="number" id="hours" placeholder="Hours" class="text-center w-24 p-2 rounded shadow-lg">
+            <input type="number" id="minutes" placeholder="Minutes" class="text-center w-24 p-2 rounded shadow-lg">
+            <input type="number" id="seconds" placeholder="Seconds" class="text-center w-24 p-2 rounded shadow-lg">
+        </div>
+        <button id="startTimer" class="bg-green-700 hover:scale-110 text-white font-bold py-2 px-4 mr-8 rounded">
+        START
+        </button>
+        <button id="resetTimer" class="bg-red-700 hover:scale-110 text-white font-bold py-2 px-4 rounded">
+        RESET
+        </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="timer.js"></script>
+</body>
+</html>
